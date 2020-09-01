@@ -3,7 +3,7 @@ export default {
   dest: 'dist/dist/index.js',
   sourceMap: false,
   format: 'umd',
-  moduleName: 'ng.angular-fusioncharts',
+  moduleName: 'ng.angular-froalacharts',
   globals: {
     '@angular/core': 'ng.core'
   }

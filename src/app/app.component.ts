@@ -4,8 +4,8 @@ import '../../node_modules/prismjs/prism.js';
 import 'codemirror/mode/javascript/javascript';
 import 'codemirror/mode/xml/xml';
 import CodeSnippets from './quickstart-snippet';
-import SelectedSingleton from './fusioncharts/services/selected.singleton';
-import SampleCode from './fusioncharts/samplecode';
+import SelectedSingleton from './froalacharts/services/selected.singleton';
+import SampleCode from './froalacharts/samplecode';
 
 @Component({
   selector: 'app',
@@ -22,14 +22,14 @@ import SampleCode from './fusioncharts/samplecode';
 })
 export class AppComponent {
   installCode = CodeSnippets.installCode;
-  installFusionCharts = CodeSnippets.installFusionCharts;
+  installFroalaCharts = CodeSnippets.installFroalaCharts;
   includeInModule = CodeSnippets.importCode;
   useDirective = CodeSnippets.useDirective;
-  renderFusionMaps = CodeSnippets.renderFusionMaps;
+  renderFroalaMaps = CodeSnippets.renderFroalaMaps;
   mapHtml = CodeSnippets.mapHtml;
-  setupFusionTime = CodeSnippets.setupFusionTime;
-  fusionTimeComponentCode = CodeSnippets.fusionTimeComponentCode;
-  fusionTimeTemplateCode = CodeSnippets.fusionTimeTemplateCode;
+  setupFroalaTime = CodeSnippets.setupFroalaTime;
+  froalaTimeComponentCode = CodeSnippets.froalaTimeComponentCode;
+  froalaTimeTemplateCode = CodeSnippets.froalaTimeTemplateCode;
 
   modalClasses = 'show fade in';
   isModalOpen = false;

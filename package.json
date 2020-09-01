@@ -1,5 +1,5 @@
 {
-  "name": "angular-fusioncharts",
+  "name": "angular-froalacharts",
   "version": "3.0.4",
   "scripts": {
     "ng": "ng",
@@ -17,11 +17,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fusioncharts/angular-fusioncharts"
+    "url": "https://github.com/froalacharts/angular-froalacharts"
   },
   "author": {
-    "name": "FusionCharts",
-    "email": "support@fusioncharts.com"
+    "name": "FroalaCharts",
+    "email": "support@froalacharts.com"
   },
   "contributors": [
     {
@@ -50,7 +50,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fusioncharts/angular-fusioncharts/issues"
+    "url": "https://github.com/froalacharts/angular-froalacharts/issues"
   },
   "main": "./dist/index.js",
   "dependencies": {
@@ -80,7 +80,7 @@
     "@types/node": "~6.0.60",
     "codelyzer": "~3.0.1",
     "codemirror": "^5.39.2",
-    "fusioncharts": "^3.14.0-sr.1",
+    "froalacharts": "^1.0.4",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "^3.0.0",

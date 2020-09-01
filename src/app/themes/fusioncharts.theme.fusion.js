@@ -1,13 +1,13 @@
 /*
- Fusion Theme v0.1
- FusionCharts JavaScript Library
+ Froala Theme v0.1
+ FroalaCharts JavaScript Library
 
  Copyright InfoSoft Global Pvt. Ltd.
- License Information at <http://www.fusioncharts.com/license>
+ License Information at <http://www.froalacharts.com/license>
 */
 
-FusionCharts.register("theme", {
-  name: "fusion",
+FroalaCharts.register("theme", {
+  name: "froala",
   theme: {
     base: {
       chart: {
