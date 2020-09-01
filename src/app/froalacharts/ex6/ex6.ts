@@ -11,7 +11,7 @@ declare var Prism;
 
 export class Ex6 {
   demoId = 'ex6';
-  type = "Column2D";
+  type = "funnel";
   width = "100%";
   height = "400";
   dataFormat = "json";

@@ -8,7 +8,7 @@
     <!-- FC home -->
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="header-link" href="//github.com/froalacharts/angular-froalacharts" target="_blank">GitHub Repository</a>
+        <a class="header-link" href="//github.com/froala/angular-froalacharts" target="_blank">GitHub Repository</a>
       </li>
     </ul>
   </nav>
@@ -149,9 +149,9 @@
                       <div class="h5 badge badge-normal">FroalaTime</div>
                     </div>
                 </div>
-                <div class="nav-item" [ngClass]="sampleCode['ex2'].title === selectedTitle ? 'selected' : ''">
+                <!-- <div class="nav-item" [ngClass]="sampleCode['ex2'].title === selectedTitle ? 'selected' : ''">
                   <div class="p" (click)='openPage("/ex2")'>{{sampleCode['ex2'].title}}</div>
-                </div>
+                </div> -->
                 <div class="nav-item" [ngClass]="sampleCode['ex12'].title === selectedTitle ? 'selected' : ''">
                   <div class="p" (click)='openPage("/ex12")'>{{sampleCode['ex12'].title}}</div>
                 </div>
@@ -310,12 +310,12 @@
                     <div class="p item-desc">{{sampleCode['ex31'].description}}</div>
                   </div>
                 </a>
-                <a [routerLinkActive]="['active']" [routerLink]="['/ex2']" href="#/demos/ex2" (click)="updateId('ex2')">
+                <!-- <a [routerLinkActive]="['active']" [routerLink]="['/ex2']" href="#/demos/ex2" (click)="updateId('ex2')">
                   <div class="nav-item">
                     <div class="h5">{{sampleCode['ex2'].title}}</div>
                     <div class="p item-desc">{{sampleCode['ex2'].description}}</div>
                   </div>
-                </a>
+                </a> -->
                 <a [routerLinkActive]="['active']" [routerLink]="['/ex12']" href="#/demos/ex12" (click)="updateId('ex12')">
                   <div class="nav-item">
                     <div class="h5">{{sampleCode['ex12'].title}}</div>
@@ -620,7 +620,7 @@
           <div class="col-12 pt-3">
             <div class="h5">
               <span>Step 3: Add the
-                <code>fusiocharts</code> directive</span>
+                <code>froalacharts</code> directive</span>
             </div>
             <p class="code-desc">
               In the template, add a
@@ -651,74 +651,13 @@
         </div>
         <!-- steps end -->
         <div class="row">
-          <div class="col">
-            <div class="h2 mt-2">Render FroalaMaps</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <p class="code-desc">To render a map, import the FroalaMaps module along with the map definition. Then pass as a dependency to
-              <code>FroalaChartsModule</code> in the
-              <code>@NgModule</code>
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 pt-1">
-            <div class="code-view mt-2">
-              <div class="card-shadow">
-                <div class="card-body p-0">
-                  <div class="code-panel">
-                    <div class="codeMirrorDiv" id="c3">
-                      <codemirror [(ngModel)]="renderFroalaMaps" [config]="{ 
-                                    lineNumbers: true,
-                                    theme:'dracula', 
-                                    tabSize: '4',
-                                    smartIndent: true,
-                                    readOnly: true,
-                                    mode:'javascript'
-                                }">
-                      </codemirror>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="code-desc pt-1">In the template</p>
-        <div class="row">
-          <div class="col-12">
-            <div class="code-view">
-              <div class="card-shadow">
-                <div class="card-body p-0">
-                  <div class="code-panel">
-                    <div class="codeMirrorDiv" id="c3">
-                      <codemirror [(ngModel)]="mapHtml" [config]="{ 
-                                        lineNumbers: true,
-                                        theme:'dracula', 
-                                        tabSize: '4',
-                                        smartIndent: true,
-                                        readOnly: true,
-                                        mode:'htmlembedded'
-                                    }">
-                      </codemirror>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
             <div class="col">
               <div class="h2 mt-2">Usage and integration of FroalaTime</div>
             </div>
           </div>
           <div class="row">
             <div class="col-12">
-              <p class="code-desc">From <code>froalacharts@3.13.3-sr.1</code> and <code>angular-froalacharts@3.0.0</code>, You can visualize timeseries data easily with angular.
+              <p class="code-desc">From <code>froalacharts@1.0.4</code> and <code>angular-froalacharts@3.0.0</code>, You can visualize timeseries data easily with angular.
               </p>
             </div>
           </div>

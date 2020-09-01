@@ -26,7 +26,7 @@ export class Ex1 implements AfterViewInit {
     this.chartConfig = {
       width: '100%',
       height: '400',
-      type: "column2d",
+      type: "pie",
       dataFormat: "json",
       creditLabel: 'false'
     };

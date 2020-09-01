@@ -6,7 +6,7 @@ var chartData = {
 }
 
 var config = {
-    type: "Column2D",
+    type: "Column",
     width: 500,
     height: 300,
     dataFormat: 'json',
@@ -19,7 +19,7 @@ var config = {
               <froalacharts [chartConfig]=chartConf> </froalacharts>
               <froalacharts type="Spline" [chartConfig]="chartConf"> </froalacharts>
               <froalacharts type="Pyramid" [chartConfig]=chartConf> </froalacharts>
-              <froalacharts type="World" [chartConfig]=chartConf> Column2D chart will render here... </froalacharts>
+              <froalacharts type="World" [chartConfig]=chartConf> Column chart will render here... </froalacharts>
           `
 })
 

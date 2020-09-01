@@ -1,16 +1,16 @@
-# angular-fusioncharts
+# angular-froalacharts
 
-A simple and lightweight official Angular component for FusionCharts JavaScript charting library. angular-fusioncharts enables you to add JavaScript charts in your Angular application without any hassle.
+A simple and lightweight official Angular component for FroalaCharts JavaScript charting library. angular-froalacharts enables you to add JavaScript charts in your Angular application without any hassle.
 
-## [Demo](https://fusioncharts.github.io/angular-fusioncharts/)
+## [Demo](https://froalacharts.github.io/angular-froalacharts/)
 
-- Github Repo: [https://github.com/fusioncharts/angular-fusioncharts](https://github.com/fusioncharts/angular-fusioncharts)
-- Documentation: [https://www.fusioncharts.com/dev/getting-started/angular/angular/your-first-chart-using-angular](https://www.fusioncharts.com/dev/getting-started/angular/angular/your-first-chart-using-angular)
-- Support: [https://www.fusioncharts.com/contact-support](https://www.fusioncharts.com/contact-support)
-- FusionCharts
-  - Official Website: [https://www.fusioncharts.com/](https://www.fusioncharts.com/)
-  - Official NPM Package: [https://www.npmjs.com/package/fusioncharts](https://www.npmjs.com/package/fusioncharts)
-- Issues: [https://github.com/fusioncharts/angular-fusioncharts/issues](https://github.com/fusioncharts/angular-fusioncharts/issues)
+- Github Repo: [https://github.com/froalacharts/angular-froalacharts](https://github.com/froalacharts/angular-froalacharts)
+- Documentation: [https://www.froalacharts.com/dev/getting-started/angular/angular/your-first-chart-using-angular](https://www.froalacharts.com/dev/getting-started/angular/angular/your-first-chart-using-angular)
+- Support: [https://www.froalacharts.com/contact-support](https://www.froalacharts.com/contact-support)
+- FroalaCharts
+  - Official Website: [https://www.froalacharts.com/](https://www.froalacharts.com/)
+  - Official NPM Package: [https://www.npmjs.com/package/froalacharts](https://www.npmjs.com/package/froalacharts)
+- Issues: [https://github.com/froalacharts/angular-froalacharts/issues](https://github.com/froalacharts/angular-froalacharts/issues)
 
 ---
 
@@ -23,7 +23,7 @@ A simple and lightweight official Angular component for FusionCharts JavaScript 
   - [Working with events](#working-with-events)
 - [Quick Start](#quick-start)
 - [Going Beyond Charts](#going-beyond-charts)
-- [Usage and Integration of FusionTime](#usage-and-integration-of-fusionTime)
+- [Usage and Integration of FroalaTime](#usage-and-integration-of-froalaTime)
 - [For Contributors](#for-contributors)
 - [Licensing](#licensing)
 
@@ -33,25 +33,25 @@ A simple and lightweight official Angular component for FusionCharts JavaScript 
 
 - **Node.js**, **NPM/Yarn** installed globally in your OS.
 - You've an **Angular** Application.
-- **FusionCharts** installed in your project, as detailed below:
+- **FroalaCharts** installed in your project, as detailed below:
 
 ### Installation
 
-To install `angular-fusioncharts` library, run:
+To install `angular-froalacharts` library, run:
 
 ```bash
-$ npm install angular-fusioncharts --save
+$ npm install angular-froalacharts --save
 ```
 
-To install `fusioncharts` library:
+To install `froalacharts` library:
 
 ```bash
-$ npm install fusioncharts --save
+$ npm install froalacharts --save
 ```
 
 ## Quick Start
 
-Here is a basic sample that shows how to create a chart using `angular-fusioncharts`:
+Here is a basic sample that shows how to create a chart using `angular-froalacharts`:
 
 Add this in your Angular `AppModule`:
 
@@ -61,34 +61,23 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-// Import angular-fusioncharts
-import { FusionChartsModule } from 'angular-fusioncharts';
+// Import angular-froalacharts
+import { FroalaChartsModule } from 'angular-froalacharts';
 
-// Import FusionCharts library and chart modules
-import * as FusionCharts from 'fusioncharts';
-import * as Charts from 'fusioncharts/fusioncharts.charts';
+// Import FroalaCharts library and chart modules
+import * as FroalaCharts from 'froalacharts';
 
-// For Powercharts , Widgets, and Maps
-// import * as PowerCharts from 'fusioncharts/fusioncharts.powercharts';
-// import * as Widgets from 'fusioncharts/fusioncharts.widgets';
-// import * as Maps from 'fusioncharts/fusioncharts.maps';
-// To know more about suites,
-// read this https://www.fusioncharts.com/dev/getting-started/plain-javascript/install-using-plain-javascript
+import * as FroalaTheme from 'froalacharts/themes/fusioncharts.theme.fusion';
 
-// For Map definition files
-// import * as World from 'fusioncharts/maps/fusioncharts.world';
-
-import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
-
-// Pass the fusioncharts library and chart modules
-FusionChartsModule.fcRoot(FusionCharts, Charts, FusionTheme);
+// Pass the froalacharts library and chart modules
+FroalaChartsModule.fcRoot(FroalaCharts, Charts, FroalaTheme);
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    // Specify FusionChartsModule as import
-    FusionChartsModule
+    // Specify FroalaChartsModule as import
+    FroalaChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -112,7 +101,7 @@ export class AppComponent {
   title: string;
 
   constructor() {
-    this.title = 'Angular  FusionCharts Sample';
+    this.title = 'Angular  FroalaCharts Sample';
 
     this.dataSource = {
       chart: {
@@ -121,7 +110,7 @@ export class AppComponent {
         xAxisName: 'Country',
         yAxisName: 'Reserves (MMbbl)',
         numberSuffix: 'K',
-        theme: 'fusion'
+        theme: 'froala'
       },
       data: [
         { label: 'Venezuela', value: '290' },
@@ -139,17 +128,17 @@ export class AppComponent {
 ```
 
 ```xml
-<!-- You can now use fusioncharts component in app.component.html -->
+<!-- You can now use froalacharts component in app.component.html -->
 <h1>
   {{title}}
 </h1>
-<fusioncharts
+<froalacharts
     width="600"
     height="350"
-    type="Column2D"
+    type="Column"
     dataFormat="JSON"
     [dataSource]="dataSource"
-></fusioncharts>
+></froalacharts>
 ```
 
 ## Working with Events
@@ -158,18 +147,18 @@ Fusincharts events can be subscribed from component's output params.
 Usage in template :
 
 ```xml
-<fusioncharts
+<froalacharts
   width="600"
   height="350"
-  type="Column2D"
+  type="Column"
   dataFormat="json"
   [dataSource]="dataSource"
   (dataplotRollOver)="plotRollOver($event)">
-</fusioncharts>
+</froalacharts>
 ```
 
 And in component's code , `$event` will be an object `{ eventObj : {...}, dataObj: {...} }`  
-For more on this read [here](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-events)
+For more on this read [here](https://www.froalacharts.com/dev/api/froalacharts/froalacharts-events)
 
 ```js
 import {Component} from '@angular/core';
@@ -183,7 +172,7 @@ export class AppComponent {
   title: string;
 
   constructor() {
-    this.title = "Angular  FusionCharts Sample";
+    this.title = "Angular  FroalaCharts Sample";
 
     this.dataSource = {
       ...// same data as above
@@ -200,24 +189,24 @@ export class AppComponent {
 }
 ```
 
-Get the list of fusioncharts' [events](https://www.fusioncharts.com/dev/advanced-chart-configurations/events/classifying-events)
+Get the list of froalacharts' [events](https://www.froalacharts.com/dev/advanced-chart-configurations/events/classifying-events)
 
 ## Working with APIs
 
-Using api of charts involves getting the FusionCharts chart instance from the `initialized` event.
+Using api of charts involves getting the FroalaCharts chart instance from the `initialized` event.
 It emits chart object which can be operated upon later.
 
 In template, we add `initialized` event
 
 ```xml
-<fusioncharts
-  type="column2d"
+<froalacharts
+  type="column"
   width="100%"
   height="400"
   dataFormat="json"
   [dataSource]="dataSource"
   (initialized)="initialized($event)">
-</fusioncharts>
+</froalacharts>
 <button (click)="changeLabel()">Change label</button>
 ```
 
@@ -237,7 +226,7 @@ export class AppComponent {
   title: string;
   chart: any;
   constructor() {
-    this.title = "Angular  FusionCharts Sample";
+    this.title = "Angular  FroalaCharts Sample";
 
     this.dataSource = {
       ...// same data as above
@@ -256,33 +245,31 @@ export class AppComponent {
 
 ```
 
-## Usage and integration of FusionTime
+## Usage and integration of FroalaTime
 
-From `fusioncharts@3.13.3-sr.1` and `angular-fusioncharts@3.0.0`, You can visualize timeseries data easily with angular.
+From `froalacharts@1.0.4` and `angular-froalacharts@3.0.0`, You can visualize timeseries data easily with angular.
 
-Learn more about FusionTime [here](https://www.fusioncharts.com/fusiontime).
+Learn more about FroalaTime [here](https://www.froalacharts.com/froalatime).
 
-### Setup for FusionTime
+### Setup for FroalaTime
 
 ```typescript
 // app.module.ts
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-// Import angular-fusioncharts
-import { FusionChartsModule } from 'angular-fusioncharts';
-// Import FusionCharts library and chart modules
-import * as FusionCharts from 'fusioncharts';
-import * as Charts from 'fusioncharts/fusioncharts.charts';
-import * as TimeSeries from 'fusioncharts/fusioncharts.timeseries'; // Import timeseries
-// Pass the fusioncharts library and chart modules
-FusionChartsModule.fcRoot(FusionCharts, Charts, TimeSeries);
+// Import angular-froalacharts
+import { FroalaChartsModule } from 'angular-froalacharts';
+// Import FroalaCharts library and chart modules
+import * as FroalaCharts from 'froalacharts';
+// Pass the froalacharts library and chart modules
+FroalaChartsModule.fcRoot(FroalaCharts, Charts, TimeSeries);
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    // Specify FusionChartsModule as import
-    FusionChartsModule
+    // Specify FroalaChartsModule as import
+    FroalaChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -295,7 +282,7 @@ export class AppModule {}
 ```typescript
 // In app.component.ts
 import { Component } from '@angular/core';
-import * as FusionCharts from 'fusioncharts';
+import * as FroalaCharts from 'froalacharts';
 const dataUrl =
   'https://raw.githubusercontent.com/fusioncharts/dev_centre_docs/fusiontime-beta-release/charts-resources/fusiontime/online-sales-single-series/data.json';
 const schemaUrl =
@@ -331,11 +318,11 @@ export class AppComponent {
     Promise.all([dataFetch, schemaFetch]).then(res => {
       let data = res[0];
       let schema = res[1];
-      let fusionTable = new FusionCharts.DataStore().createDataTable(
+      let froalaTable = new FroalaCharts.DataStore().createDataTable(
         data,
         schema
       ); // Instance of DataTable to be passed as data in dataSource
-      this.dataSource.data = fusionTable;
+      this.dataSource.data = froalaTable;
     });
   }
 }
@@ -345,26 +332,26 @@ export class AppComponent {
 
 ```html
 <div>
-  <fusioncharts
+  <froalacharts
     [type]="type"
     [width]="width"
     [height]="height"
     [dataSource]="dataSource"
-  ></fusioncharts>
+  ></froalacharts>
 </div>
 ```
 
-Useful links for FusionTime
+Useful links for FroalaTime
 
-- [How FusionTime works](https://www.fusioncharts.com/dev/fusiontime/getting-started/how-fusion-time-works)
-- [Create your first chart](https://www.fusioncharts.com/dev/fusiontime/getting-started/create-your-first-chart-in-fusiontime)
+- [How FroalaTime works](https://www.froalacharts.com/dev/froalatime/getting-started/how-froala-time-works)
+- [Create your first chart](https://www.froalacharts.com/dev/froalatime/getting-started/create-your-first-chart-in-froalatime)
 
 ## For Contributors
 
 - Clone the repository and install dependencies
 
 ```
-$ git clone https://github.com/fusioncharts/angular-fusioncharts.git
+$ git clone https://github.com/froalacharts/angular-froalacharts.git
 $ cd angular-component
 $ npm i
 $ npm start
@@ -372,9 +359,9 @@ $ npm start
 
 ## Going Beyond Charts
 
-- Explore 20+ pre-built business specific dashboards for different industries like energy and manufacturing to business functions like sales, marketing and operations [here](https://www.fusioncharts.com/explore/dashboards).
-- See [Data Stories](https://www.fusioncharts.com/explore/data-stories) built using FusionCharts’ interactive JavaScript visualizations and learn how to communicate real-world narratives through underlying data to tell compelling stories.
+- Explore 20+ pre-built business specific dashboards for different industries like energy and manufacturing to business functions like sales, marketing and operations [here](https://www.froalacharts.com/explore/dashboards).
+- See [Data Stories](https://www.froalacharts.com/explore/data-stories) built using FroalaCharts’ interactive JavaScript visualizations and learn how to communicate real-world narratives through underlying data to tell compelling stories.
 
 ## Licensing
 
-The FusionCharts React component is open-source and distributed under the terms of the MIT/X11 License. However, you will need to download and include FusionCharts library in your page separately, which has a [separate license](https://www.fusioncharts.com/buy).
+The FroalaCharts React component is open-source and distributed under the terms of the MIT/X11 License. However, you will need to download and include FroalaCharts library in your page separately, which has a [separate license](https://www.froalacharts.com/buy).
