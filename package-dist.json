@@ -1,13 +1,13 @@
 {
-  "name": "angular-fusioncharts",
+  "name": "angular-froalacharts",
   "version": "3.0.3",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fusioncharts/angular-fusioncharts"
+    "url": "https://github.com/froalacharts/angular-froalacharts"
   },
   "author": {
-    "name": "FusionCharts",
-    "email": "support@fusioncharts.com"
+    "name": "FroalaCharts",
+    "email": "support@froalacharts.com"
   },
   "contributors": [
     {
@@ -31,10 +31,10 @@
       "url": "https://github.com/rohanoid5"
     }
   ],
-  "keywords": ["angular", "angular2", "angular 2", "FusionCharts"],
+  "keywords": ["angular", "angular2", "angular 2", "FroalaCharts"],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fusioncharts/angular-fusioncharts/issues"
+    "url": "https://github.com/froalacharts/angular-froalacharts/issues"
   },
   "main": "dist/index.js",
   "module": "index.js",

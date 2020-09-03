@@ -1,48 +1,48 @@
 import { Routes } from '@angular/router';
 
-import { Ex1 } from './fusioncharts/ex1/ex1';
-import { Ex2 } from './fusioncharts/ex2/ex2';
-import { Ex3 } from './fusioncharts/ex3/ex3';
-import { Ex4 } from './fusioncharts/ex4/ex4';
-import { Ex5 } from './fusioncharts/ex5/ex5';
-import { Ex5a } from './fusioncharts/ex5a/ex5a';
-import { Ex6 } from './fusioncharts/ex6/ex6';
-import { Ex7 } from './fusioncharts/ex7/ex7';
-import { Ex8 } from './fusioncharts/ex8/ex8';
-import { Ex9 } from './fusioncharts/ex9/ex9';
-import { Ex10 } from './fusioncharts/ex10/ex10';
-import { Ex11 } from './fusioncharts/ex11/ex11';
-import { Ex12 } from './fusioncharts/ex12/ex12';
-import { Ex13 } from './fusioncharts/ex13/ex13';
-import { Ex14 } from './fusioncharts/ex14/ex14';
-import { Ex15 } from './fusioncharts/ex15/ex15';
-import { Ex16 } from './fusioncharts/ex16/ex16';
-import { Ex17 } from './fusioncharts/ex17/ex17';
-import { Ex18 } from './fusioncharts/ex18/ex18';
-import { Ex19 } from './fusioncharts/ex19/ex19';
-import { Ex20 } from './fusioncharts/ex20/ex20';
-import { Ex21 } from './fusioncharts/ex21/ex21';
-import { Ex22 } from './fusioncharts/ex22/ex22';
-import { Ex23 } from './fusioncharts/ex23/ex23';
-import { Ex24 } from './fusioncharts/ex24/ex24';
-import { Ex25 } from './fusioncharts/ex25/ex25';
-import { Ex26 } from './fusioncharts/ex26/ex26';
-import { Ex27 } from './fusioncharts/ex27/ex27';
-import { Ex28 } from './fusioncharts/ex28/ex28';
-import { Ex29 } from './fusioncharts/ex29/ex29';
-import { Ex30 } from './fusioncharts/ex30/ex30';
-import { Ex31 } from './fusioncharts/ex31/ex31';
-import { Ex32 } from './fusioncharts/ex32/ex32';
-import { Ex33 } from './fusioncharts/ex33/ex33';
-import { Ex34 } from './fusioncharts/ex34/ex34';
-import { Ex35 } from './fusioncharts/ex35/ex35';
-import { Ex36 } from './fusioncharts/ex36/ex36';
+import { Ex1 } from './froalacharts/ex1/ex1';
+import { Ex2 } from './froalacharts/ex2/ex2';
+import { Ex3 } from './froalacharts/ex3/ex3';
+import { Ex4 } from './froalacharts/ex4/ex4';
+import { Ex5 } from './froalacharts/ex5/ex5';
+import { Ex5a } from './froalacharts/ex5a/ex5a';
+import { Ex6 } from './froalacharts/ex6/ex6';
+import { Ex7 } from './froalacharts/ex7/ex7';
+import { Ex8 } from './froalacharts/ex8/ex8';
+import { Ex9 } from './froalacharts/ex9/ex9';
+import { Ex10 } from './froalacharts/ex10/ex10';
+import { Ex11 } from './froalacharts/ex11/ex11';
+import { Ex12 } from './froalacharts/ex12/ex12';
+import { Ex13 } from './froalacharts/ex13/ex13';
+import { Ex14 } from './froalacharts/ex14/ex14';
+import { Ex15 } from './froalacharts/ex15/ex15';
+import { Ex16 } from './froalacharts/ex16/ex16';
+import { Ex17 } from './froalacharts/ex17/ex17';
+import { Ex18 } from './froalacharts/ex18/ex18';
+import { Ex19 } from './froalacharts/ex19/ex19';
+import { Ex20 } from './froalacharts/ex20/ex20';
+import { Ex21 } from './froalacharts/ex21/ex21';
+import { Ex22 } from './froalacharts/ex22/ex22';
+import { Ex23 } from './froalacharts/ex23/ex23';
+import { Ex24 } from './froalacharts/ex24/ex24';
+import { Ex25 } from './froalacharts/ex25/ex25';
+import { Ex26 } from './froalacharts/ex26/ex26';
+import { Ex27 } from './froalacharts/ex27/ex27';
+import { Ex28 } from './froalacharts/ex28/ex28';
+import { Ex29 } from './froalacharts/ex29/ex29';
+import { Ex30 } from './froalacharts/ex30/ex30';
+import { Ex31 } from './froalacharts/ex31/ex31';
+import { Ex32 } from './froalacharts/ex32/ex32';
+import { Ex33 } from './froalacharts/ex33/ex33';
+import { Ex34 } from './froalacharts/ex34/ex34';
+import { Ex35 } from './froalacharts/ex35/ex35';
+import { Ex36 } from './froalacharts/ex36/ex36';
 
-// import { Ex10 } from './fusioncharts/ex10/ex10';
+// import { Ex10 } from './froalacharts/ex10/ex10';
 import { MyAppComponent } from './observable/observable.component';
 
 // import { HomeComponent } from './home/home.component';
-import { FusionChartsSample } from './fusioncharts/fusioncharts.component';
+import { FroalaChartsSample } from './froalacharts/froalacharts.component';
 
 export const rootRouterConfig: Routes = [
   { path: '', redirectTo: 'ex1', pathMatch: 'full' },
@@ -83,6 +83,6 @@ export const rootRouterConfig: Routes = [
   { path: 'ex34', component: Ex34 },
   { path: 'ex35', component: Ex35 },
   { path: 'ex36', component: Ex36 },
-  { path: 'fusioncharts', component: MyAppComponent },
-  { path: 'fusioncharts', component: FusionChartsSample }
+  { path: 'froalacharts', component: MyAppComponent },
+  { path: 'froalacharts', component: FroalaChartsSample }
 ];

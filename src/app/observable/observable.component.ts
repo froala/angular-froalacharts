@@ -2,7 +2,7 @@ import {Component, Input, ElementRef, AfterViewInit, OnInit, KeyValueDiffers, Si
 import {Observable} from 'rxjs/Observable';
 import {Observer} from 'rxjs/Observer';
 
-import * as FusionCharts from 'fusioncharts';
+import * as FroalaCharts from 'froalacharts';
 
 
 

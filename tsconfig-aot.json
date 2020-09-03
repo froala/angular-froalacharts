@@ -19,7 +19,7 @@
 				"node_modules/rxjs/*"
 			]
 		},
-		"rootDir": "src/angular-fusioncharts",
+		"rootDir": "src/angular-froalacharts",
 		"outDir": "dist",
 		"sourceMap": true,
 		"inlineSources": true,
@@ -31,7 +31,7 @@
 		]
 	},
 	"files": [
-		"./src/angular-fusioncharts/index.ts"
+		"./src/angular-froalacharts/index.ts"
 	],
 	"angularCompilerOptions": {
 		"strictMetadataEmit": true,
