@@ -2,15 +2,15 @@
 
 A simple and lightweight official Angular component for FroalaCharts JavaScript charting library. angular-froalacharts enables you to add JavaScript charts in your Angular application without any hassle.
 
-## [Demo](https://froalacharts.github.io/angular-froalacharts/)
+## [Demo](https://fusioncharts.github.io/angular-fusioncharts/)
 
-- Github Repo: [https://github.com/froalacharts/angular-froalacharts](https://github.com/froalacharts/angular-froalacharts)
-- Documentation: [https://www.froalacharts.com/dev/getting-started/angular/angular/your-first-chart-using-angular](https://www.froalacharts.com/dev/getting-started/angular/angular/your-first-chart-using-angular)
-- Support: [https://www.froalacharts.com/contact-support](https://www.froalacharts.com/contact-support)
+- Github Repo: [https://github.com/froala/angular-froalacharts](https://github.com/froala/angular-froalacharts)
+- Documentation: [https://www.fusioncharts.com/dev/getting-started/angular/angular/your-first-chart-using-angular](https://www.fusioncharts.com/dev/getting-started/angular/angular/your-first-chart-using-angular)
+- Support: [https://www.fusioncharts.com/contact-support](https://www.fusioncharts.com/contact-support)
 - FroalaCharts
-  - Official Website: [https://www.froalacharts.com/](https://www.froalacharts.com/)
-  - Official NPM Package: [https://www.npmjs.com/package/froalacharts](https://www.npmjs.com/package/froalacharts)
-- Issues: [https://github.com/froalacharts/angular-froalacharts/issues](https://github.com/froalacharts/angular-froalacharts/issues)
+  - Official Website: [https://www.fusioncharts.com/](https://www.fusioncharts.com/)
+  - Official NPM Package: [https://www.npmjs.com/package/fusioncharts](https://www.npmjs.com/package/fusioncharts)
+- Issues: [https://github.com/fusioncharts/angular-fusioncharts/issues](https://github.com/fusioncharts/angular-fusioncharts/issues)
 
 ---
 
@@ -65,12 +65,12 @@ import { AppComponent } from './app.component';
 import { FroalaChartsModule } from 'angular-froalacharts';
 
 // Import FroalaCharts library and chart modules
-import * as FroalaCharts from 'froalacharts';
+import * as FroalaCharts from 'froalacharts';;
 
-import * as FroalaTheme from 'froalacharts/themes/fusioncharts.theme.fusion';
+import * as FroalaTheme from 'froalacharts/themes/froalacharts.theme.froala';
 
 // Pass the froalacharts library and chart modules
-FroalaChartsModule.fcRoot(FroalaCharts, Charts, FroalaTheme);
+FroalaChartsModule.fcRoot(FroalaCharts, FroalaTheme);
 
 @NgModule({
   declarations: [AppComponent],
@@ -135,7 +135,7 @@ export class AppComponent {
 <froalacharts
     width="600"
     height="350"
-    type="Column"
+    type="pie"
     dataFormat="JSON"
     [dataSource]="dataSource"
 ></froalacharts>
@@ -150,7 +150,7 @@ Usage in template :
 <froalacharts
   width="600"
   height="350"
-  type="Column"
+  type="pie"
   dataFormat="json"
   [dataSource]="dataSource"
   (dataplotRollOver)="plotRollOver($event)">
@@ -158,7 +158,7 @@ Usage in template :
 ```
 
 And in component's code , `$event` will be an object `{ eventObj : {...}, dataObj: {...} }`  
-For more on this read [here](https://www.froalacharts.com/dev/api/froalacharts/froalacharts-events)
+For more on this read [here](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-events)
 
 ```js
 import {Component} from '@angular/core';
@@ -189,7 +189,7 @@ export class AppComponent {
 }
 ```
 
-Get the list of froalacharts' [events](https://www.froalacharts.com/dev/advanced-chart-configurations/events/classifying-events)
+Get the list of froalacharts' [events](https://www.fusioncharts.com/dev/advanced-chart-configurations/events/classifying-events)
 
 ## Working with APIs
 
@@ -200,7 +200,7 @@ In template, we add `initialized` event
 
 ```xml
 <froalacharts
-  type="column"
+  type="column2d"
   width="100%"
   height="400"
   dataFormat="json"
@@ -247,9 +247,9 @@ export class AppComponent {
 
 ## Usage and integration of FroalaTime
 
-From `froalacharts@1.0.4` and `angular-froalacharts@3.0.0`, You can visualize timeseries data easily with angular.
+From `fusioncharts@1.0.4` and `angular-froalacharts@3.0.0`, You can visualize timeseries data easily with angular.
 
-Learn more about FroalaTime [here](https://www.froalacharts.com/froalatime).
+Learn more about FroalaTime [here](https://www.fusioncharts.com/fusiontime).
 
 ### Setup for FroalaTime
 
@@ -263,7 +263,7 @@ import { FroalaChartsModule } from 'angular-froalacharts';
 // Import FroalaCharts library and chart modules
 import * as FroalaCharts from 'froalacharts';
 // Pass the froalacharts library and chart modules
-FroalaChartsModule.fcRoot(FroalaCharts, Charts, TimeSeries);
+FroalaChartsModule.fcRoot(FroalaCharts);
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -343,15 +343,15 @@ export class AppComponent {
 
 Useful links for FroalaTime
 
-- [How FroalaTime works](https://www.froalacharts.com/dev/froalatime/getting-started/how-froala-time-works)
-- [Create your first chart](https://www.froalacharts.com/dev/froalatime/getting-started/create-your-first-chart-in-froalatime)
+- [How FroalaTime works](https://www.fusioncharts.com/dev/fusiontime/getting-started/how-fusion-time-works)
+- [Create your first chart](https://www.fusioncharts.com/dev/fusiontime/getting-started/create-your-first-chart-in-fusiontime)
 
 ## For Contributors
 
 - Clone the repository and install dependencies
 
 ```
-$ git clone https://github.com/froalacharts/angular-froalacharts.git
+$ git clone https://github.com/froala/angular-froalacharts.git
 $ cd angular-component
 $ npm i
 $ npm start
@@ -359,9 +359,9 @@ $ npm start
 
 ## Going Beyond Charts
 
-- Explore 20+ pre-built business specific dashboards for different industries like energy and manufacturing to business functions like sales, marketing and operations [here](https://www.froalacharts.com/explore/dashboards).
-- See [Data Stories](https://www.froalacharts.com/explore/data-stories) built using FroalaCharts’ interactive JavaScript visualizations and learn how to communicate real-world narratives through underlying data to tell compelling stories.
+- Explore 20+ pre-built business specific dashboards for different industries like energy and manufacturing to business functions like sales, marketing and operations [here](https://www.fusioncharts.com/explore/dashboards).
+- See [Data Stories](https://www.fusioncharts.com/explore/data-stories) built using FroalaCharts’ interactive JavaScript visualizations and learn how to communicate real-world narratives through underlying data to tell compelling stories.
 
 ## Licensing
 
-The FroalaCharts React component is open-source and distributed under the terms of the MIT/X11 License. However, you will need to download and include FroalaCharts library in your page separately, which has a [separate license](https://www.froalacharts.com/buy).
+The FroalaCharts React component is open-source and distributed under the terms of the MIT/X11 License. However, you will need to download and include FroalaCharts library in your page separately, which has a [separate license](https://www.fusioncharts.com/buy).
