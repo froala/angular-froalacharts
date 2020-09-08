@@ -23,7 +23,7 @@ export class Ex6 {
       "xAxisName": "Country",
       "yAxisName": "Reserves (MMbbl)",
       "numberSuffix": "K",
-      "theme": "fusion",
+      "theme": "froala",
       "updateAnimDuration":"0.4"
     },
     "data": [{

@@ -23,7 +23,7 @@ export class Ex12 {
             "upperLimit": "100",
             "showValue": "1",
             "numberSuffix": "%",
-            "theme": "fusion",
+            "theme": "froala",
             "showToolTip": "0"
         },
         "colorRange": {

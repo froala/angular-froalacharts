@@ -200,7 +200,7 @@ In template, we add `initialized` event
 
 ```xml
 <froalacharts
-  type="column2d"
+  type="pie"
   width="100%"
   height="400"
   dataFormat="json"
@@ -247,7 +247,7 @@ export class AppComponent {
 
 ## Usage and integration of FroalaTime
 
-From `fusioncharts@1.0.4` and `angular-froalacharts@3.0.0`, You can visualize timeseries data easily with angular.
+From `froalacharts@1.0.6` and `angular-froalacharts@1.0.0`, You can visualize timeseries data easily with angular.
 
 Learn more about FroalaTime [here](https://www.fusioncharts.com/fusiontime).
 

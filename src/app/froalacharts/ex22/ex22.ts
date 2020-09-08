@@ -26,7 +26,7 @@ export class Ex22 {
         "xAxisName": "Day",
         "yAxisName": "No. of Visitors (In 1000s)",
         "showValues": "0",
-        "theme": "fusion"
+        "theme": "froala"
       },
       "annotations": {
         "groups": [{

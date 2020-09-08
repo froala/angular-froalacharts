@@ -69,27 +69,13 @@ import {
 // Load FroalaCharts
 import * as FroalaCharts from 'froalacharts';
 // Load Ocean theme
-import * as Ocean from 'froalacharts/themes/fusioncharts.theme.ocean';
-import * as Fint from 'froalacharts/themes/fusioncharts.theme.fint';
-import * as Candy from 'froalacharts/themes/fusioncharts.theme.candy';
-import * as Gammel from 'froalacharts/themes/fusioncharts.theme.gammel';
-import * as Zune from 'froalacharts/themes/fusioncharts.theme.zune';
-import * as Froala from 'froalacharts/themes/fusioncharts.theme.fusion';
-import * as Carbon from 'froalacharts/themes/fusioncharts.theme.carbon';
-// import * as Ocean from 'froalacharts/themes/froalacharts.theme.ocean';
-
-// require('./themes/froalacharts.theme.froala.js');
-// require('./themes/froalacharts.theme.gammel.js');
+import * as Candy from 'froalacharts/themes/froalacharts.theme.candy';
+import * as Froala from 'froalacharts/themes/froalacharts.theme.froala';
 
 FroalaChartsModule.fcRoot(
   FroalaCharts,
-  Ocean,
-  Fint,
-  Gammel,
-  Zune,
   Froala,
-  Candy,
-  Carbon
+  Candy
 );
 
 @NgModule({

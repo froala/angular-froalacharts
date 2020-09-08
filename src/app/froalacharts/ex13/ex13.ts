@@ -25,7 +25,7 @@ export class Ex13 {
       "includevalueinlabels": "1",
       "labelsepchar": ": ",
       "entityFillHoverColor": "#FFF9C4",
-      "theme": "fusion"
+      "theme": "froala"
     },
     "colorrange": {
       "minvalue": "0",

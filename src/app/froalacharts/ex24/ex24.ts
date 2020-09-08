@@ -31,7 +31,7 @@ export class Ex24 {
           "useDataPlotColorForLabels": "1",
           "enablemultislicing": "0",
           "showlegend": "0",
-          "theme": "fusion",
+          "theme": "froala",
       },
       "data": [{
           "label": "Apache",

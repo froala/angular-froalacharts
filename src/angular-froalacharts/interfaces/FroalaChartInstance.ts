@@ -1,5 +1,5 @@
-interface FusionChartInstance{
+interface FroalaChartInstance{
   chart: Object;
 }
 
-export default FusionChartInstance;
+export default FroalaChartInstance;

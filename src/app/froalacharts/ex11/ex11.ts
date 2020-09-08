@@ -40,7 +40,7 @@ export class Ex11 {
             "xaxisname": "Flavor",
             "yaxisname": "Amount (In USD)",
             "numberprefix": "$",
-            "theme": "fusion",
+            "theme": "froala",
             "rotateValues": "0"
         },
       "data": [
@@ -67,7 +67,7 @@ export class Ex11 {
                     "caption": "Apple Juice - Quarterly Sales",
                     "subcaption": "Last year",
                     "numberprefix": "$",
-                    "theme": "fusion",
+                    "theme": "froala",
                     "rotateValues": "0",
                     "plottooltext": "$label, $dataValue,  $percentValue"
                 },
@@ -93,7 +93,7 @@ export class Ex11 {
                   "caption": "Cranberry Juice - Quarterly Sales",
                   "subcaption": "Last year",
                   "numberprefix": "$",
-                  "theme": "fusion",
+                  "theme": "froala",
                   "plottooltext": "$label, $dataValue,  $percentValue"
               },
               "data": [
@@ -122,7 +122,7 @@ export class Ex11 {
                     "caption": "Grape Juice - Quarterly Sales",
                     "subcaption": "Last year",
                     "numberprefix": "$",
-                    "theme": "fusion",
+                    "theme": "froala",
                     "rotateValues": "0",
                     "plottooltext": "$label, $dataValue,  $percentValue"
                 },

@@ -38,7 +38,7 @@ export class Ex1 implements AfterViewInit {
         "xAxisName": "Country",
         "yAxisName": "Reserves (MMbbl)",
         "numberSuffix": "K",
-        "theme": "fusion",
+        "theme": "froala",
       },
       "data": [{
         "label": "Venezuela",

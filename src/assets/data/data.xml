@@ -1,4 +1,4 @@
-<chart caption="Countries With Most Oil Reserves [2017-18]" subcaption="In MMbbl = One Million barrels" xaxisname="Country" yaxisname="Reserves (MMbbl)" numbersuffix="K" theme="fusion">
+<chart caption="Countries With Most Oil Reserves [2017-18]" subcaption="In MMbbl = One Million barrels" xaxisname="Country" yaxisname="Reserves (MMbbl)" numbersuffix="K" theme="froala">
     <set label="Venezuela" value="290" />
     <set label="Saudi" value="260" />
     <set label="Canada" value="180" />

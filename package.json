@@ -1,6 +1,6 @@
 {
   "name": "angular-froalacharts",
-  "version": "3.0.4",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -17,11 +17,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/froalacharts/angular-froalacharts"
+    "url": "https://github.com/froala/angular-froalacharts"
   },
   "author": {
-    "name": "FroalaCharts",
-    "email": "support@froalacharts.com"
+    "name": "Idera",
+    "email": "support@fusioncharts.com"
   },
   "contributors": [
     {
@@ -50,7 +50,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/froalacharts/angular-froalacharts/issues"
+    "url": "https://github.com/froala/angular-froalacharts/issues"
   },
   "main": "./dist/index.js",
   "dependencies": {
@@ -80,7 +80,7 @@
     "@types/node": "~6.0.60",
     "codelyzer": "~3.0.1",
     "codemirror": "^5.39.2",
-    "froalacharts": "^1.0.4",
+    "froalacharts": "^1.0.6",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "^3.0.0",

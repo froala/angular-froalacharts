@@ -28,7 +28,7 @@ export class Ex19 {
         "showPercentValues": "1",
         "legendPosition": "bottom",
         "useDataPlotColorForLabels": "1",
-        "theme": "fusion",
+        "theme": "froala",
       },
       "data": [{
         "label": "Apache",

@@ -38,7 +38,7 @@ export class Ex17 {
           "xAxisName": "Country",
           "yAxisName": "Reserves (MMbbl)",
           "numberSuffix": "K",
-          "theme": "fusion"
+          "theme": "froala"
       },
       "data": [
           {

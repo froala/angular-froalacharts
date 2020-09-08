@@ -21,7 +21,7 @@ export class Ex2 {
           "showPercentInTooltip" : "0",
           "numberPrefix" : "$",
           "enableMultiSlicing":"1",
-          "theme": "fusion"
+          "theme": "froala"
         },
         "data": [{
           "label": "Equity",

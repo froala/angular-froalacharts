@@ -19,7 +19,7 @@ export class Ex21 {
   sampleCode = fcDemos;
   dataSource: any;
   chartObj:any;
-  chart: any = 'column2d';
+  chart: any = 'pie';
 
   constructor(private zone: NgZone) {
     this.dataSource = {
@@ -30,7 +30,7 @@ export class Ex21 {
           "showPercentInTooltip" : "0",
           "numberPrefix" : "$",
           "enableMultiSlicing":"1",
-          "theme": "fusion"
+          "theme": "froala"
       },
       "data": [
           {

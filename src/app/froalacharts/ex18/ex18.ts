@@ -19,7 +19,7 @@ export class Ex18 {
   sampleCode = fcDemos;
   dataSource: any;
   chartObj: any;
-  theme: string = 'fusion';
+  theme: string = 'froala';
   constructor(private zone: NgZone) {
     this.dataSource = {
       "chart": {
@@ -28,7 +28,7 @@ export class Ex18 {
           "xAxisName": "Country",
           "yAxisName": "Reserves (MMbbl)",
           "numberSuffix": "K",
-          "theme": "fusion"
+          "theme": "froala"
       },
       "data": [
           {

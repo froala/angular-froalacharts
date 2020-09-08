@@ -20,7 +20,7 @@ export class Ex3 {
       "yAxisName": "Amount (In USD)",
       "numberPrefix": "$",
       "exportenabled": "1",
-      "theme": "fusion"
+      "theme": "froala"
     },
     "categories": [{
       "category": [{
