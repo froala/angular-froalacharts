@@ -12,7 +12,7 @@ import SampleCode from './froalacharts/samplecode';
   styleUrls: [
     './app.component.css',
     '../../node_modules/prismjs/themes/prism.css',
-    './themes/froalacharts.theme.froala.css',
+    //'./themes/froalacharts.theme.froala.css',
     './themes/github-css/codemirror.css',
     './themes/github-css/dracula.css',
     './themes/github-css/style.css'
