@@ -3,11 +3,11 @@
   "version": "3.0.3",
   "repository": {
     "type": "git",
-    "url": "https://github.com/froalacharts/angular-froalacharts"
+    "url": "https://github.com/froala/angular-froalacharts"
   },
   "author": {
-    "name": "FroalaCharts",
-    "email": "support@froalacharts.com"
+    "name": "idera",
+    "email": "support@fusioncharts.com"
   },
   "contributors": [
     {
@@ -34,7 +34,7 @@
   "keywords": ["angular", "angular2", "angular 2", "FroalaCharts"],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/froalacharts/angular-froalacharts/issues"
+    "url": "https://github.com/fusioncharts/angular-fusioncharts/issues"
   },
   "main": "dist/index.js",
   "module": "index.js",
