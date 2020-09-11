@@ -2,7 +2,7 @@
 
 A simple and lightweight official Angular component for FroalaCharts JavaScript charting library. angular-froalacharts enables you to add JavaScript charts in your Angular application without any hassle.
 
-## [Demo](https://fusioncharts.github.io/angular-fusioncharts/)
+## [Demo](https://github.com/froala/angular-froalacharts/blob/master/README.md#demo)
 
 - Github Repo: [https://github.com/froala/angular-froalacharts](https://github.com/froala/angular-froalacharts)
 - Documentation: [https://www.fusioncharts.com/dev/getting-started/angular/angular/your-first-chart-using-angular](https://www.fusioncharts.com/dev/getting-started/angular/angular/your-first-chart-using-angular)
@@ -364,4 +364,4 @@ $ npm start
 
 ## Licensing
 
-The FroalaCharts Angular component is open-source and distributed under the terms of the MIT/X11 License. However, you will need to download and include FroalaCharts library in your page separately, which has a [separate license](https://www.fusioncharts.com/buy).
+The FroalaCharts Angular component is open-source and distributed under the terms of the MIT/X11 License. However, you will need to download and include FroalaCharts library in your page separately, which has a [separate license](https://github.com/froala/angular-froalacharts/blob/master/README.md#licensing).
