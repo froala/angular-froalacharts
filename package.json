@@ -20,8 +20,8 @@
     "url": "https://github.com/froala/angular-froalacharts"
   },
   "author": {
-    "name": "Idera",
-    "email": "support@fusioncharts.com"
+    "name": "FusionCharts, Inc.",
+    "email": "support@froala.com"
   },
   "contributors": [
     {
@@ -50,7 +50,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/froala/angular-froalacharts/issues"
+    "url": "https://froala.com/contact/"
   },
   "main": "./dist/index.js",
   "dependencies": {
