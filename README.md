@@ -364,4 +364,4 @@ $ npm start
 
 ## Licensing
 
-The FroalaCharts Angular component is open-source and distributed under the terms of the MIT/X11 License. However, you will need to download and include FroalaCharts library in your page separately, which has a [separate license](https://github.com/froala/angular-froalacharts/blob/master/README.md#licensing).
+The FroalaCharts Angular component is open-source and distributed under the terms of the MIT/X11 License. However, you will need to download and include FroalaCharts library in your page separately, which has a [separate license](https://www.ideracorp.com/legal/Froala#tabs-2).
