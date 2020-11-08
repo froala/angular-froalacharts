@@ -1,6 +1,6 @@
 {
   "name": "angular-froalacharts",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -20,37 +20,27 @@
     "url": "https://github.com/froala/angular-froalacharts"
   },
   "author": {
-    "name": "FusionCharts, Inc.",
+    "name": "froala",
     "email": "support@froala.com"
   },
-  "contributors": [
-    {
-      "name": "Rohit Kumar",
-      "email": "rohit.kr001@gmail.com",
-      "url": "https://github.com/rohitkr"
-    },
-    {
-      "name": "Rousan Ali",
-      "email": "rousanali786@gmail.com",
-      "url": "https://github.com/ariyankhan"
-    },
-    {
-      "name": "Ashok Mandal",
-      "email": "askipop@gmail.com",
-      "url": "https://github.com/ashok1994"
-    },
-    {
-      "name": "Rohan Dey",
-      "email": "rohanoid5@gmail.com",
-      "url": "https://github.com/rohanoid5"
-    }
-  ],
   "keywords": [
-    "angular"
+    "angular",
+    "angular-charts",
+    "angular-component",
+    "component",
+    "froalacharts",
+    "javascript-charts",
+    "typescript-charts",
+    "interactive-charts",
+    "charts",
+    "graphs",
+    "visualization",
+    "data-visualization",
+    "dataviz"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://froala.com/contact/"
+    "url": "https://github.com/froala/angular-froalacharts/issues"
   },
   "main": "./dist/index.js",
   "dependencies": {
@@ -80,7 +70,7 @@
     "@types/node": "~6.0.60",
     "codelyzer": "~3.0.1",
     "codemirror": "^5.39.2",
-    "froalacharts": "^1.0.9",
+    "froalacharts": "^1.0.0",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "^3.0.0",
